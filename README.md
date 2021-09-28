@@ -1,1 +1,2 @@
-# JavaScript learning
+# JavaScrit Learning
+Recording JavaScript learning progress
