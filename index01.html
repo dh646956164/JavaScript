@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript语言，定义变量</title>
+</head>
+<body>
+    <!--在网页中，JavaScript代码，需要在script标签中定义。script标签可以放在的网页额的任何地方，
+    但是，通常会放到body标签的最下方，确保JavaScript代码，在网页的内容全部加载完毕后再执行-->
+    <script>
+        // 变量：就是内存中的一个空间，用于存储数据，数组的种类是不一样的，所以对空间的要求也不一样。
+        // var是定义变量的关键字,定义变量的方式是: var 变量名 = 变量值
+        // 注意：js是一门弱类型语言，不像Java，C#是强类型语言。
+        // 强类型语言，在定义变量的时候，就必须要明类型，并且之前不能在改变类型。
+        // 弱类型语言，在定义变量的时候，不需要明确类型，类型有具体的数据确定，并且之前可以改变类型
+
+        
+
+        var a = 100
+        // console.log()方法，用于在浏览器控制器中打印输出内容。
+        // typeof关键字，用于返回变量的数据类型
+        console.log(a, typeof a)   //number是数字类型。注意：在JS中，整形型和浮点型的数据都是number类型。
+        a = 55.55
+        console.log(a, typeof a)
+        a = "HelloWorld"
+        console.log(a, typeof a)  //string是字符串类型，由一对双引号 或 单引号 引起来的数据都是字符串。
+        var b = '你好世界'
+        console.log(b, typeof b);
+        var c = true   //表示真
+        console.log(c, typeof c);  //boolean是布尔类型，布尔类型用于表示：真 或 假，只有两个属性值：ture 和 false
+        c = false    //表示假
+        console.log(c, typeof c);
+          // 注意：在js中，每条语句采用分号结尾。分号可以省略。
+        var d
+        console.log(d, typeof d);  //undefined是未定义类型，变量已经定义，但还是没有数据。
+        // 定义一个对象
+        var e = {
+            //包含两个属性
+            name:"周杰伦",
+            age:18,
+            //包含一个方法
+            sing(){
+                console.log('我会唱歌。。。');
+            }
+        }
+        // object是对象类型，用于定义复杂的数据格式。
+        console.log(e, typeof e);
+        //null是空类型。用于表示空对象，所以，null本质上也是object类型。但是不具有object默认的属性和行为。
+        var f = null
+        console.log(f, typeof f);
+        // 在ES6,新增了一个数据类型. symbol，该类型，用于确定一个唯一的数据，通常用于给对象添加唯一的属性 或 方法
+        // ES6指的是ESMAScript2015之后的版本
+        var g = Symbol()
+        console.log(g, typeof g);
+        // 总结： 在决赛中，数据类型一共有7个。
+        // 分别是： number（数字类型）， string（字符串类型）， boolean(布尔类型)，undefined(未定义类型)
+        // object（对象类型），null(空对象类型)， symbol（唯一值类型（不重复））
+    </script>
+</body>
+</html>
